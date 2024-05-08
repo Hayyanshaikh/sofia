@@ -1,0 +1,90 @@
+/*=====================================
+=            Container CSS            =
+=====================================*/
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .container {
+    max-width: 1300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+/*=====  End of Container CSS  ======*/
+
+@media (max-width: 992px) {
+  header .dropdown-menu {
+    opacity: 1;
+    width: 100%;
+    display: none;
+    transition: 0s;
+    position: unset;
+    pointer-events: auto;
+    background: var(--gray-100);
+    border-color: var(--gray-200);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .banner_img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .product_img {
+    height: 250px;
+  }
+
+  .hero,
+  .hero video {
+    height: 50vh;
+  }
+
+
+  .text_line {
+    font-size: clamp(16px, 2vw, 18px);
+  }
+
+}
+
+@media (max-width: 576px) {
+  .xs-width .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .xs-width .row>* {
+    width: unset;
+  }
+}
+
+@media (max-width: 575px) {
+  .logo {
+    width: 70px;
+  }
+
+}

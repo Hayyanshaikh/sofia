@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sofia - Women's Clothes store</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Favicon -->
+  <link rel="icon" href="images/brand/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+  <!-- offcanvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="cart_canvas" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h6 class="text-uppercase">shopping bag <span class="text-capitalize">(5 items)</span> </h6>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body bg-light">
+      <ul class="list-unstyled">
+        <li>
+          <div class="card cart_product mb-3">
+            <figure>
+              <img src="images/products/product_1.webp" class="" alt="...">
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">drs-01</h5>
+              <p class="card-text">Rs. 16,650</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn">
+                <i class="ph ph-trash"></i>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card cart_product mb-3">
+            <figure>
+              <img src="images/products/product_2.webp" class="" alt="...">
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">drs-02</h5>
+              <p class="card-text">Rs. 18,950</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn">
+                <i class="ph ph-trash"></i>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card cart_product mb-3">
+            <figure>
+              <img src="images/products/product_3.webp" class="" alt="...">
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">drs-03</h5>
+              <p class="card-text">Rs. 21,350</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn">
+                <i class="ph ph-trash"></i>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card cart_product mb-3">
+            <figure>
+              <img src="images/products/product_4.webp" class="" alt="...">
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">drs-04</h5>
+              <p class="card-text">Rs. 24,500</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn">
+                <i class="ph ph-trash"></i>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card cart_product mb-3">
+            <figure>
+              <img src="images/products/product_5.webp" class="" alt="...">
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">drs-05</h5>
+              <p class="card-text">Rs. 28,750</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn">
+                <i class="ph ph-trash"></i>
+              </button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="offcanvas-footer">
+      <div class="d-flex gap-2 w-100 align-items-center justify-content-between">
+        <h6 class="fw-normal">Sub Total</h6>
+        <h6 class="fw-normal">$20.63</h6>
+      </div>
+      <small class="text-center w-100 mt-2 mb-3 d-block">Shipping, taxes, and discount codes calculated at checkout.</small>
+      <a href="checkout.html" class="btn w-100">
+        <span>Check Out</span>
+      </a>
+    </div>
+  </div>
+  <!-- end offcanvas -->
+  <!--============================
+  =            Header            =
+  =============================-->
+  <header>
+    <div class="header_top xs-width py-2 bg-dark text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <p class="text-start small">Free Shipping Above $300</p>
+          </div>
+          <div class="col-sm-4 d-none d-sm-block">
+            <p class="text-center small">info.sofia@sofia.ae</p>
+          </div>
+          <div class="col-sm-4">
+            <p class="text-end small">+1 (424) 433-3993</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header_middle xs-width py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 d-sm-block d-none">
+            <div class="header_search_wrapper">
+              <a href="#" class="header_icon d-md-none d-flex">
+                <i class="ph ph-magnifying-glass"></i>
+              </a>
+              <form class="form-inline d-md-flex d-none">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
+                  <div class="input-group-append">
+                    <button class="btn btn-primary" type="submit"><i class="ph ph-magnifying-glass"></i></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <a href="index.html" class="logo">
+              <img src="images/brand/logo.svg"/ alt="Brand Logo">
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <div class="header_ecom_icons">
+              <a href="cart.html" class="header_icon d-flex d-sm-none">
+                <i class="ph ph-magnifying-glass"></i>
+              </a>
+              <a href="cart.html" class="header_icon icon_badge" data-bs-toggle="offcanvas" data-bs-target="#cart_canvas" data-value="5">
+                <i class="ph ph-shopping-bag"></i>
+              </a>
+              <a href="cart.html" class="header_icon icon_badge" data-value="2">
+                <i class="ph ph-heart"></i>
+              </a>
+              <a href="cart.html" class="header_icon">
+                <i class="ph ph-user-circle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header_bottom xs-width bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-sm-2">
+            <button data-bs-toggle="offcanvas" data-bs-target="#menu" class="sale_btn d-lg-none px-3 d-flex">
+              <i class="ph ph-list"></i>
+            </button>
+            <div id="menu" class="menu">
+              <div class="offcanvas-header d-lg-none d-flex">
+                <h5 class="">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+              </div>
+              <div class="offcanvas-body overflow bg-light">
+                <ul class="header_categories d-lg-inline-flex align-items-center gap-4">
+                  <li>
+                    <a class="text-capitalize" href="javascript:void(0)">eid collection</a>
+                    <div class="dropdown-menu">
+                      <a href="#" class="dropdown-item">
+                        <i class="ph ph-caret-double-right"></i>
+                        <span>Unstitched</span>
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        <i class="ph ph-caret-double-right"></i>
+                        <span>Stitched</span>
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        <i class="ph ph-caret-double-right"></i>
+                        <span>Luxury Formals</span>
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        <i class="ph ph-caret-double-right"></i>
+                        <span>View All</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="text-capitalize" href="javascript:void(0)">Unstitched</a>
+                    <div class="dropdown-menu">
+                      <a href="#" class="dropdown-item">
+                        <i class="ph ph-caret-double-right"></i>
+                        <span>Cotton Unstitched</span>
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        <i class="ph ph-caret-double-right"></i>
+                        <span>Lawn Unstitched</span>
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        <i class="ph ph-caret-double-right"></i>
+                        <span>Embroidered Unstitched</span>
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        <i class="ph ph-caret-double-right"></i>
+                        <span>Printed Unstitched</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="text-capitalize" href="javascript:void(0)">Stitched</a>
+                    <div class="dropdown-menu">
+                      <a href="#" class="dropdown-item">
+                        <i class="ph ph-caret-double-right"></i>
+                        <span>Casual Stitched</span>
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        <i class="ph ph-caret-double-right"></i>
+                        <span>Formal Stitched</span>
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        <i class="ph ph-caret-double-right"></i>
+                        <span>Designer Stitched</span>
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        <i class="ph ph-caret-double-right"></i>
+                        <span>Party Wear Stitched</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="text-capitalize" href="javascript:void(0)">Couture Wedding Wear</a>
+                    <div class="dropdown-menu">
+                      <a href="#" class="dropdown-item">
+                        <i class="ph ph-caret-double-right"></i>
+                        <span>Bridal Dresses</span>
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        <i class="ph ph-caret-double-right"></i>
+                        <span>Groom Sherwanis</span>
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        <i class="ph ph-caret-double-right"></i>
+                        <span>Wedding Accessories</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="text-capitalize" href="javascript:void(0)">Jewelry</a>
+                    <div class="dropdown-menu">
+                      <a href="#" class="dropdown-item">
+                        <i class="ph ph-caret-double-right"></i>
+                        <span>Earrings</span>
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        <i class="ph ph-caret-double-right"></i>
+                        <span>Necklaces</span>
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        <i class="ph ph-caret-double-right"></i>
+                        <span>Bracelets</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="text-capitalize" href="javascript:void(0)">Accessories</a>
+                    <div class="dropdown-menu">
+                      <a href="#" class="dropdown-item">
+                        <i class="ph ph-caret-double-right"></i>
+                        <span>Bags</span>
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        <i class="ph ph-caret-double-right"></i>
+                        <span>Belts</span>
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        <i class="ph ph-caret-double-right"></i>
+                        <span>Scarves</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-3 offset-lg-0 offset-sm-7 d-flex align-items-center justify-content-end">
+            <a class="text-capitalize sale_btn" href="category.html">Best Sale</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--====  End of Footer  ====-->
+  <!--==========================
+  =            Main            =
+  ===========================-->
+  <main>
+    <!-- hero -->
+    <section class="hero no_p">
+      <div class="container-fluid px-0">
+        <div class="row">
+          <div class="col-12 px-0">
+            <video autoplay muted loop class="w-100">
+              <source src="videos/hero.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero end -->
+    <!-- collections -->
+    <section class="collections">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 text-center text-lg-start mb-lg-0 mb-4">
+            <hgroup>
+              <h2 class="heading">The Sofia Collection</h2>
+              <p class="text_line">Luxe, lightweight, and made with the perfect blend of cashmere and cotton.</p>
+            </hgroup>
+            <div class="collection_slider_buttons">
+              <div class="swiper-button-prev arrows"></div>
+              <div class="swiper-button-next arrows"></div>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="collection_slider swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="card collection_card">
+                    <figure class="collection_img">
+                      <img src="images/collections/collection_1.webp" class="card-img-top lazy" alt="Luxury Formals">
+                    </figure>
+                    <div class="card-body">
+                      <h5 class="card-title">teens</h5>
+                      <button class="btn outline">
+                        <i class="ph ph-arrow-up-right"></i>
+                      </button>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="card collection_card">
+                    <figure class="collection_img">
+                      <img src="images/collections/collection_2.webp" class="card-img-top lazy" alt="Luxury Pret">
+                    </figure>
+                    <div class="card-body">
+                      <h5 class="card-title">Luxury Pret</h5>
+                      <button class="btn outline">
+                        <i class="ph ph-arrow-up-right"></i>
+                      </button>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="card collection_card">
+                    <figure class="collection_img">
+                      <img src="images/collections/collection_3.webp" class="card-img-top" alt="Kids">
+                    </figure>
+                    <div class="card-body">
+                      <h5 lazy class="card-title">bottoms</h5>
+                      <button class="btn outline">
+                        <i class="ph ph-arrow-up-right"></i>
+                      </button>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="card collection_card">
+                    <figure class="collection_img">
+                      <img src="images/collections/collection_4.webp" class="card-img-top lazy" alt="Menswear">
+                    </figure>
+                    <div class="card-body">
+                      <h5 class="card-title">ready to wear</h5>
+                      <button class="btn outline">
+                        <i class="ph ph-arrow-up-right"></i>
+                      </button>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="card collection_card">
+                    <figure class="collection_img">
+                      <img src="images/collections/collection_5.webp" class="card-img-top lazy" alt="Mommy & Me">
+                    </figure>
+                    <div class="card-body">
+                      <h5 class="card-title">Kids</h5>
+                      <button class="btn outline">
+                        <i class="ph ph-arrow-up-right"></i>
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- collections end -->
+    <!-- banners -->
+    <section class="banners no_p">
+      <div class="row">
+        <div class="col-12">
+          <a href="#" class="banner_card">
+            <figure class="banner_img">
+              <img src="images/banners/banner_1.jpeg" alt="">
+            </figure>
+            <div class="banner_card_content">
+              <h3 class="banner_title">silk luxe</h3>
+              <button class="btn"><span>shop now</span></button>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a href="#" class="banner_card">
+            <figure class="banner_img">
+              <img src="images/banners/banner_2.jpeg" alt="">
+            </figure>
+            <div class="banner_card_content">
+              <h3 class="banner_title">the social</h3>
+              <button class="btn"><span>shop now</span></button>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a href="#" class="banner_card">
+            <figure class="banner_img">
+              <img src="images/banners/banner_3.jpeg" alt="">
+            </figure>
+            <div class="banner_card_content">
+              <h3 class="banner_title">formals</h3>
+              <button class="btn"><span>shop now</span></button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- banners end -->
+    <!-- New Arrivals -->
+    <section class="new_arrivals">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-12">
+            <h3 class="heading text-center">New Arrivals</h3>
+          </div>
+        </div>
+        <div class="row products_row">
+          <div class="col-lg-3 col-md-4 col-6 mb-3">
+            <div class="card product_card">
+              <figure class="product_img">
+                <span class="badge">Sale</span>
+                <img src="images/products/product_1.webp" class="card-img" alt="Product Image">
+              </figure>
+              <div class="card-body">
+                <hgroup>
+                  <h5 class="card-title">drs-01</h5>
+                  <p class="card-text">Rs. 16,650</p>
+                </hgroup>
+                <a href="#" class="btn">
+                  <span class="d-md-block d-none me-1">Add to cart</span>
+                  <i class="ph ph-shopping-cart-simple"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 mb-3">
+            <div class="card product_card">
+              <figure class="product_img">
+                <img src="images/products/product_2.webp" class="card-img" alt="Product Image">
+              </figure>
+              <div class="card-body">
+                <hgroup>
+                  <h5 class="card-title">drs-02</h5>
+                  <p class="card-text">Rs. 18,950</p>
+                </hgroup>
+                <a href="#" class="btn">
+                  <span class="d-md-block d-none me-1">Add to cart</span>
+                  <i class="ph ph-shopping-cart-simple"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 mb-3">
+            <div class="card product_card">
+              <figure class="product_img">
+                <span class="badge">Sale</span>
+                <img src="images/products/product_3.webp" class="card-img" alt="Product Image">
+              </figure>
+              <div class="card-body">
+                <hgroup>
+                  <h5 class="card-title">drs-03</h5>
+                  <p class="card-text">Rs. 21,350</p>
+                </hgroup>
+                <a href="#" class="btn">
+                  <span class="d-md-block d-none me-1">Add to cart</span>
+                  <i class="ph ph-shopping-cart-simple"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 mb-3">
+            <div class="card product_card">
+              <figure class="product_img">
+                <img src="images/products/product_4.webp" class="card-img" alt="Product Image">
+              </figure>
+              <div class="card-body">
+                <hgroup>
+                  <h5 class="card-title">drs-04</h5>
+                  <p class="card-text">Rs. 24,500</p>
+                </hgroup>
+                <a href="#" class="btn">
+                  <span class="d-md-block d-none me-1">Add to cart</span>
+                  <i class="ph ph-shopping-cart-simple"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 mb-3">
+            <div class="card product_card">
+              <figure class="product_img">
+                <img src="images/products/product_5.webp" class="card-img" alt="Product Image">
+              </figure>
+              <div class="card-body">
+                <hgroup>
+                  <h5 class="card-title">drs-05</h5>
+                  <p class="card-text">Rs. 28,750</p>
+                </hgroup>
+                <a href="#" class="btn">
+                  <span class="d-md-block d-none me-1">Add to cart</span>
+                  <i class="ph ph-shopping-cart-simple"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 mb-3">
+            <div class="card product_card">
+              <figure class="product_img">
+                <img src="images/products/product_6.webp" class="card-img" alt="Product Image">
+              </figure>
+              <div class="card-body">
+                <hgroup>
+                  <h5 class="card-title">drs-06</h5>
+                  <p class="card-text">Rs. 32,450</p>
+                </hgroup>
+                <a href="#" class="btn">
+                  <span class="d-md-block d-none me-1">Add to cart</span>
+                  <i class="ph ph-shopping-cart-simple"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 mb-3">
+            <div class="card product_card">
+              <figure class="product_img">
+                <span class="badge">Sale</span>
+                <img src="images/products/product_7.webp" class="card-img" alt="Product Image">
+              </figure>
+              <div class="card-body">
+                <hgroup>
+                  <h5 class="card-title">drs-07</h5>
+                  <p class="card-text">Rs. 36,850</p>
+                </hgroup>
+                <a href="#" class="btn">
+                  <span class="d-md-block d-none me-1">Add to cart</span>
+                  <i class="ph ph-shopping-cart-simple"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 mb-3">
+            <div class="card product_card">
+              <figure class="product_img">
+                <span class="badge">Sale</span>
+                <img src="images/products/product_8.webp" class="card-img" alt="Product Image">
+              </figure>
+              <div class="card-body">
+                <hgroup>
+                  <h5 class="card-title">drs-08</h5>
+                  <p class="card-text">Rs. 39,950</p>
+                </hgroup>
+                <a href="#" class="btn">
+                  <span class="d-md-block d-none me-1">Add to cart</span>
+                  <i class="ph ph-shopping-cart-simple"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- New Arrivals end -->
+  </main>
+  <!--====  End of Main  ====-->
+  <!--============================
+  =            Footer            =
+  =============================-->
+  <footer class="footer pt-5 pb-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+          <a href="index.html" class="logo mx-0 mb-3">
+            <img src="images/brand/logo.svg" alt="">
+          </a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+          <div class="d-flex gap-2 align-items-center">
+            <a href="#"><i class="ph ph-facebook-logo"></i></a>
+            <a href="#"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#"><i class="ph ph-x-logo"></i></a>
+            <a href="#"><i class="ph ph-pinterest-logo"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+          <h5 class="mb-3">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+          <h5 class="mb-3">Categories</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Dresses</a></li>
+            <li><a href="#">Tops</a></li>
+            <li><a href="#">Bottoms</a></li>
+            <li><a href="#">Outerwear</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+          <h5 class="mb-3">Subscribe</h5>
+          <p>Subscribe to our newsletter for exclusive offers and updates.</p>
+          <form action="#" method="post" class="subscribe-form">
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Enter your email" required>
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="submit">Subscribe</button>
+              </div>
+            </div>
+          </form>
+          <div class="footer_payment_methods mt-3">
+            <figure class="method">
+              <img src="images/payments/visa.svg" alt="visa">
+            </figure>
+            <figure class="method">
+              <img src="images/payments/amex.svg" alt="amex">
+            </figure>
+            <figure class="method">
+              <img src="images/payments/mastercard.svg" alt="mastercard">
+            </figure>
+            <figure class="method">
+              <img src="images/payments/elo.svg" alt="elo">
+            </figure>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-10">
+          <p>&copy; 2024 SOFIA Women's Clothing Store. All rights reserved.</p>
+        </div>
+        <div class="col-md-2 text-md-right">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--====  End of Footer  ====-->
+  <!-- Scripts Files -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/phosphor-icons.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
