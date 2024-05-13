@@ -35,6 +35,9 @@
 /*=====  End of Container CSS  ======*/
 
 @media (max-width: 992px) {
+  div[class^="col-"]:has(.single_product_slider){
+    position: unset;
+  }
   header .dropdown-menu {
     opacity: 1;
     width: 100%;
@@ -55,6 +58,11 @@
 }
 
 @media (max-width: 600px) {
+
+  .single_product_img {
+    max-height: 400px;
+  }
+
   .product_img {
     height: 250px;
   }

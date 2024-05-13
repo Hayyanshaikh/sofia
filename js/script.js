@@ -4,7 +4,7 @@ $(function() {
     convertToOffcanvas();
   }).trigger('resize');
 
-  var mySwiper = new Swiper('.collection_slider', {
+  var collectionSlider = new Swiper('.collection_slider', {
     loop: true,
     slidesPerView: "auto",
     centeredSlides: true,
@@ -23,6 +23,41 @@ $(function() {
       },
     }
   });
+
+  var singleProductSlider = new Swiper('.single_product_slider', {
+    loop: true,
+    speed: 500,
+    spaceBetween: 20,
+    slidesPerView: 1,
+    autoplay: {
+      delay: 3000,
+    },
+    breakpoints: {
+      424: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 2,
+      },
+    }
+  });
+  
+  $('.minus').click(function() {
+    var value = parseInt($(this).parent(".counter").find(".count").val());
+    if (value > 1) {
+      $(this).parent(".counter").find(".count").val(value - 1);
+    }
+  });
+
+  $('.plus').click(function() {
+    var value = parseInt($(this).parent(".counter").find(".count").val());
+    $(this).parent(".counter").find(".count").val(value + 1);
+  });
+
+  priceRangeSlider(0, 300);
 });
 
 const convertToOffcanvas = () => {
@@ -35,4 +70,49 @@ const menuDropdown = () => {
   $(window).width() < 992 ? categoriesLinks.click(function() {
     $(this).parent().find(".dropdown-menu").slideToggle();
   }) : categoriesLinks.unbind("click");
+}
+
+const priceRangeSlider = (min, max) => {
+  $(".min_value input").val(min);
+  $(".max_value input").val(max);
+  $(".highest_price p").text(`The highest price is $${max}`)
+
+  $("#slider-range").slider({
+    range: true,
+    min: min,
+    max: max,
+    values: [min, max],
+    slide: function(event, ui) {
+      $(".min_value input").val(ui.values[0]);
+      $(".max_value input").val(ui.values[1]);
+    }
+  });
+
+  $(".min_value input").change(function(event) {
+    var minValue = parseInt($(this).val());
+    if (minValue < min) {
+      minValue = min;
+    } else if (minValue > max) {
+      minValue = max;
+    }
+    $(this).val(minValue);
+    $("#slider-range").slider("values", 0, minValue);
+  });
+
+  $(".max_value input").change(function() {
+    var maxValue = parseInt($(this).val());
+    if (maxValue < min) {
+      maxValue = min;
+    } else if (maxValue > max) {
+      maxValue = max;
+    }
+    $(this).val(maxValue);
+    $("#slider-range").slider("values", 1, maxValue);
+  });
+
+  $(".price_rest").click(function() {
+    $("#slider-range").slider("values", [min, max]);
+    $(".min_value input").val(min);
+    $(".max_value input").val(max);
+  });
 }

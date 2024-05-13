@@ -324,316 +324,141 @@
   =            Main            =
   ===========================-->
   <main>
-    <!-- hero -->
-    <section class="hero no_p">
-      <div class="container-fluid px-0">
-        <div class="row">
-          <div class="col-12 px-0">
-            <video autoplay muted loop class="w-100">
-              <source src="videos/hero.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- hero end -->
-    <!-- collections -->
-    <section class="collections">
+    <section class="account">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 text-center text-lg-start mb-lg-0 mb-4">
-            <hgroup>
-              <h2 class="heading">The Sofia Collection</h2>
-              <p class="text_line">Luxe, lightweight, and made with the perfect blend of cashmere and cotton.</p>
-            </hgroup>
-            <div class="collection_slider_buttons">
-              <div class="swiper-button-prev arrows"></div>
-              <div class="swiper-button-next arrows"></div>
+          <div class="col-md-12">
+            <div class="heading">
+              <h2 class="heading_title">My account</h2>
             </div>
-          </div>
-          <div class="col-lg-9">
-            <div class="collection_slider swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <a href="#" class="card collection_card">
-                    <figure class="collection_img">
-                      <img src="images/collections/collection_1.webp" class="card-img-top lazy" alt="Luxury Formals">
-                    </figure>
-                    <div class="card-body">
-                      <h5 class="card-title">teens</h5>
-                      <button class="btn outline">
-                        <i class="ph ph-arrow-up-right"></i>
-                      </button>
+            <div class="account_wrapper">
+              <div class="account_sidebar">
+                <ul class="account_list">
+                  <li>
+                    <a class="active" href="my_account.html">
+                      <i class="ph ph-user-circle"></i>
+                      <span>My account</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="address_book.html">
+                      <i class="ph ph-map-pin"></i>
+                      <span>My address book</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="orders.html">
+                      <i class="ph ph-shopping-bag"></i>
+                      <span>My orders</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="account_main">
+                <h4>My account</h4>
+                <form class="account_form">
+                  <div class="form-row">
+                    <h5>Personal Information</h5>
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <p>When signing up on an e-commerce site, share your name, email, and phone. Keep your info secure. Enter details accurately for smooth account management.</p>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="mb-3">
+                          <label for="firstName" class="form-label">First Name (FS)</label>
+                          <input type="text" class="form-control" id="firstName" placeholder="eg. Mateusz">
+                        </div>
+                        <div class="mb-3">
+                          <label for="birthdate" class="form-label">Birthdate (BD)</label>
+                          <input type="date" class="form-control" id="birthdate">
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="mb-3">
+                          <label for="lastName" class="form-label">Last Name (LS)</label>
+                          <input type="text" class="form-control" id="lastName" placeholder="eg. Kowalski">
+                        </div>
+                        <div class="mb-3">
+                          <label for="phoneNumber" class="form-label">Phone Number (PN)</label>
+                          <input type="tel" class="form-control" id="phoneNumber" placeholder="eg. +1234567890">
+                        </div>
+                      </div>
                     </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#" class="card collection_card">
-                    <figure class="collection_img">
-                      <img src="images/collections/collection_2.webp" class="card-img-top lazy" alt="Luxury Pret">
-                    </figure>
-                    <div class="card-body">
-                      <h5 class="card-title">Luxury Pret</h5>
-                      <button class="btn outline">
-                        <i class="ph ph-arrow-up-right"></i>
-                      </button>
+                    <div class="col-lg-12">
+                      <div class="d-flex align-items-center justify-content-end gap-2">
+                        <button class="btn">
+                          <span>Save</span>
+                        </button>
+                      </div>
                     </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#" class="card collection_card">
-                    <figure class="collection_img">
-                      <img src="images/collections/collection_3.webp" class="card-img-top" alt="Kids">
-                    </figure>
-                    <div class="card-body">
-                      <h5 lazy class="card-title">bottoms</h5>
-                      <button class="btn outline">
-                        <i class="ph ph-arrow-up-right"></i>
-                      </button>
+                  </div>
+                  <div class="form-row">
+                    <h5>Email Address</h5>
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <p>Providing your email address is crucial for account creation on e-commerce platforms, facilitating verification and updates.</p>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="mb-3">
+                          <label for="email" class="form-label">Email Address</label>
+                          <input type="email" class="form-control" id="email" placeholder="eg. example@example.com">
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="mb-3">
+                          <label for="password" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                        </div>
+                      </div>
                     </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#" class="card collection_card">
-                    <figure class="collection_img">
-                      <img src="images/collections/collection_4.webp" class="card-img-top lazy" alt="Menswear">
-                    </figure>
-                    <div class="card-body">
-                      <h5 class="card-title">ready to wear</h5>
-                      <button class="btn outline">
-                        <i class="ph ph-arrow-up-right"></i>
-                      </button>
+                    <div class="col-lg-12">
+                      <div class="d-flex align-items-center justify-content-end gap-2">
+                        <button class="btn">
+                          <span>Save</span>
+                        </button>
+                      </div>
                     </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#" class="card collection_card">
-                    <figure class="collection_img">
-                      <img src="images/collections/collection_5.webp" class="card-img-top lazy" alt="Mommy & Me">
-                    </figure>
-                    <div class="card-body">
-                      <h5 class="card-title">Kids</h5>
-                      <button class="btn outline">
-                        <i class="ph ph-arrow-up-right"></i>
-                      </button>
+                  </div>
+                  <div class="form-row">
+                    <h5>Password</h5>
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <p>Choose a strong, memorable password for security and update it regularly to protect your account.</p>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="mb-3">
+                          <label for="current-password" class="form-label">Current Password</label>
+                          <input type="password" class="form-control" id="current-password" placeholder="Enter your current password">
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="mb-3">
+                          <label for="new-password" class="form-label">New Password</label>
+                          <input type="password" class="form-control" id="new-password" placeholder="Enter your new password">
+                        </div>
+                      </div>
+                      <div class="col-lg-8 offset-lg-4">
+                        <div class="mb-3">
+                          <label for="confirm-password" class="form-label">Confirm Password</label>
+                          <input type="password" class="form-control" id="confirm-password" placeholder="Confirm your new password">
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="d-flex align-items-center justify-content-end gap-2">
+                          <button class="btn">
+                            <span>Save</span>
+                          </button>
+                        </div>
+                      </div>
                     </div>
-                  </a>
-                </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- collections end -->
-    <!-- banners -->
-    <section class="banners no_p">
-      <div class="row">
-        <div class="col-12">
-          <a href="single_product.html" class="banner_card">
-            <figure class="banner_img">
-              <img src="images/banners/banner_1.jpeg" alt="">
-            </figure>
-            <div class="banner_card_content">
-              <h3 class="banner_title">silk luxe</h3>
-              <button class="btn"><span>shop now</span></button>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a href="single_product.html" class="banner_card">
-            <figure class="banner_img">
-              <img src="images/banners/banner_2.jpeg" alt="">
-            </figure>
-            <div class="banner_card_content">
-              <h3 class="banner_title">the social</h3>
-              <button class="btn"><span>shop now</span></button>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a href="single_product.html" class="banner_card">
-            <figure class="banner_img">
-              <img src="images/banners/banner_3.jpeg" alt="">
-            </figure>
-            <div class="banner_card_content">
-              <h3 class="banner_title">formals</h3>
-              <button class="btn"><span>shop now</span></button>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- banners end -->
-    <!-- New Arrivals -->
-    <section class="new_arrivals">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col-12">
-            <h3 class="heading text-center">New Arrivals</h3>
-          </div>
-        </div>
-        <div class="row products_row">
-          <div class="col-lg-3 col-md-4 col-6 mb-3">
-            <div class="card product_card">
-              <figure class="product_img">
-                <span class="badge">Sale</span>
-                <img src="images/products/product_1.webp" class="card-img" alt="Product Image">
-              </figure>
-              <div class="card-body">
-                <hgroup>
-                  <a href="single_product.html">
-                    <h5 class="card-title">drs-01</h5>
-                  </a>
-                  <p class="card-text">Rs. 16,650</p>
-                </hgroup>
-                <a href="#" class="btn">
-                  <span class="d-md-block d-none me-1">Add to cart</span>
-                  <i class="ph ph-shopping-cart-simple"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-3">
-            <div class="card product_card">
-              <figure class="product_img">
-                <img src="images/products/product_2.webp" class="card-img" alt="Product Image">
-              </figure>
-              <div class="card-body">
-                <hgroup>
-                  <a href="single_product.html">
-                    <h5 class="card-title">drs-02</h5>
-                  </a>
-                  <p class="card-text">Rs. 18,950</p>
-                </hgroup>
-                <a href="#" class="btn">
-                  <span class="d-md-block d-none me-1">Add to cart</span>
-                  <i class="ph ph-shopping-cart-simple"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-3">
-            <div class="card product_card">
-              <figure class="product_img">
-                <span class="badge">Sale</span>
-                <img src="images/products/product_3.webp" class="card-img" alt="Product Image">
-              </figure>
-              <div class="card-body">
-                <hgroup>
-                  <a href="single_product.html">
-                    <h5 class="card-title">drs-03</h5>
-                  </a>
-                  <p class="card-text">Rs. 21,350</p>
-                </hgroup>
-                <a href="#" class="btn">
-                  <span class="d-md-block d-none me-1">Add to cart</span>
-                  <i class="ph ph-shopping-cart-simple"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-3">
-            <div class="card product_card">
-              <figure class="product_img">
-                <img src="images/products/product_4.webp" class="card-img" alt="Product Image">
-              </figure>
-              <div class="card-body">
-                <hgroup>
-                  <a href="single_product.html">
-                    <h5 class="card-title">drs-04</h5>
-                  </a>
-                  <p class="card-text">Rs. 24,500</p>
-                </hgroup>
-                <a href="#" class="btn">
-                  <span class="d-md-block d-none me-1">Add to cart</span>
-                  <i class="ph ph-shopping-cart-simple"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-3">
-            <div class="card product_card">
-              <figure class="product_img">
-                <img src="images/products/product_5.webp" class="card-img" alt="Product Image">
-              </figure>
-              <div class="card-body">
-                <hgroup>
-                  <a href="single_product.html">
-                    <h5 class="card-title">drs-05</h5>
-                  </a>
-                  <p class="card-text">Rs. 28,750</p>
-                </hgroup>
-                <a href="#" class="btn">
-                  <span class="d-md-block d-none me-1">Add to cart</span>
-                  <i class="ph ph-shopping-cart-simple"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-3">
-            <div class="card product_card">
-              <figure class="product_img">
-                <img src="images/products/product_6.webp" class="card-img" alt="Product Image">
-              </figure>
-              <div class="card-body">
-                <hgroup>
-                  <a href="single_product.html">
-                    <h5 class="card-title">drs-06</h5>
-                  </a>
-                  <p class="card-text">Rs. 32,450</p>
-                </hgroup>
-                <a href="#" class="btn">
-                  <span class="d-md-block d-none me-1">Add to cart</span>
-                  <i class="ph ph-shopping-cart-simple"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-3">
-            <div class="card product_card">
-              <figure class="product_img">
-                <span class="badge">Sale</span>
-                <img src="images/products/product_7.webp" class="card-img" alt="Product Image">
-              </figure>
-              <div class="card-body">
-                <hgroup>
-                  <a href="single_product.html">
-                    <h5 class="card-title">drs-07</h5>
-                  </a>
-                  <p class="card-text">Rs. 36,850</p>
-                </hgroup>
-                <a href="#" class="btn">
-                  <span class="d-md-block d-none me-1">Add to cart</span>
-                  <i class="ph ph-shopping-cart-simple"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-3">
-            <div class="card product_card">
-              <figure class="product_img">
-                <span class="badge">Sale</span>
-                <img src="images/products/product_8.webp" class="card-img" alt="Product Image">
-              </figure>
-              <div class="card-body">
-                <hgroup>
-                  <a href="single_product.html">
-                    <h5 class="card-title">drs-08</h5>
-                  </a>
-                  <p class="card-text">Rs. 39,950</p>
-                </hgroup>
-                <a href="#" class="btn">
-                  <span class="d-md-block d-none me-1">Add to cart</span>
-                  <i class="ph ph-shopping-cart-simple"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- New Arrivals end -->
   </main>
   <!--====  End of Main  ====-->
   <!--============================

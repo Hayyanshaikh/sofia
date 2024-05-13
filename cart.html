@@ -15,7 +15,7 @@
 
 <body>
   <!-- offcanvas -->
-  <div class="offcanvas offcanvas-end" id="cart_canvas">
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="cart_canvas" aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-header">
       <h6 class="text-uppercase">shopping bag <span class="text-capitalize">(5 items)</span> </h6>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
@@ -319,313 +319,136 @@
       </div>
     </div>
   </header>
-  <!--====  End of Header  ====-->
+  <!--====  End of Footer  ====-->
   <!--==========================
   =            Main            =
   ===========================-->
   <main>
-    <!-- hero -->
-    <section class="hero no_p">
-      <div class="container-fluid px-0">
-        <div class="row">
-          <div class="col-12 px-0">
-            <video autoplay muted loop class="w-100">
-              <source src="videos/hero.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- hero end -->
-    <!-- collections -->
-    <section class="collections">
+    <section class="cart">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 text-center text-lg-start mb-lg-0 mb-4">
-            <hgroup>
-              <h2 class="heading">The Sofia Collection</h2>
-              <p class="text_line">Luxe, lightweight, and made with the perfect blend of cashmere and cotton.</p>
-            </hgroup>
-            <div class="collection_slider_buttons">
-              <div class="swiper-button-prev arrows"></div>
-              <div class="swiper-button-next arrows"></div>
-            </div>
-          </div>
-          <div class="col-lg-9">
-            <div class="collection_slider swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <a href="#" class="card collection_card">
-                    <figure class="collection_img">
-                      <img src="images/collections/collection_1.webp" class="card-img-top lazy" alt="Luxury Formals">
-                    </figure>
-                    <div class="card-body">
-                      <h5 class="card-title">teens</h5>
-                      <button class="btn outline">
-                        <i class="ph ph-arrow-up-right"></i>
-                      </button>
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#" class="card collection_card">
-                    <figure class="collection_img">
-                      <img src="images/collections/collection_2.webp" class="card-img-top lazy" alt="Luxury Pret">
-                    </figure>
-                    <div class="card-body">
-                      <h5 class="card-title">Luxury Pret</h5>
-                      <button class="btn outline">
-                        <i class="ph ph-arrow-up-right"></i>
-                      </button>
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#" class="card collection_card">
-                    <figure class="collection_img">
-                      <img src="images/collections/collection_3.webp" class="card-img-top" alt="Kids">
-                    </figure>
-                    <div class="card-body">
-                      <h5 lazy class="card-title">bottoms</h5>
-                      <button class="btn outline">
-                        <i class="ph ph-arrow-up-right"></i>
-                      </button>
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#" class="card collection_card">
-                    <figure class="collection_img">
-                      <img src="images/collections/collection_4.webp" class="card-img-top lazy" alt="Menswear">
-                    </figure>
-                    <div class="card-body">
-                      <h5 class="card-title">ready to wear</h5>
-                      <button class="btn outline">
-                        <i class="ph ph-arrow-up-right"></i>
-                      </button>
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#" class="card collection_card">
-                    <figure class="collection_img">
-                      <img src="images/collections/collection_5.webp" class="card-img-top lazy" alt="Mommy & Me">
-                    </figure>
-                    <div class="card-body">
-                      <h5 class="card-title">Kids</h5>
-                      <button class="btn outline">
-                        <i class="ph ph-arrow-up-right"></i>
-                      </button>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- collections end -->
-    <!-- banners -->
-    <section class="banners no_p">
-      <div class="row">
-        <div class="col-12">
-          <a href="single_product.html" class="banner_card">
-            <figure class="banner_img">
-              <img src="images/banners/banner_1.jpeg" alt="">
-            </figure>
-            <div class="banner_card_content">
-              <h3 class="banner_title">silk luxe</h3>
-              <button class="btn"><span>shop now</span></button>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a href="single_product.html" class="banner_card">
-            <figure class="banner_img">
-              <img src="images/banners/banner_2.jpeg" alt="">
-            </figure>
-            <div class="banner_card_content">
-              <h3 class="banner_title">the social</h3>
-              <button class="btn"><span>shop now</span></button>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a href="single_product.html" class="banner_card">
-            <figure class="banner_img">
-              <img src="images/banners/banner_3.jpeg" alt="">
-            </figure>
-            <div class="banner_card_content">
-              <h3 class="banner_title">formals</h3>
-              <button class="btn"><span>shop now</span></button>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- banners end -->
-    <!-- New Arrivals -->
-    <section class="new_arrivals">
-      <div class="container">
-        <div class="row mb-4">
           <div class="col-12">
-            <h3 class="heading text-center">New Arrivals</h3>
-          </div>
-        </div>
-        <div class="row products_row">
-          <div class="col-lg-3 col-md-4 col-6 mb-3">
-            <div class="card product_card">
-              <figure class="product_img">
-                <span class="badge">Sale</span>
-                <img src="images/products/product_1.webp" class="card-img" alt="Product Image">
-              </figure>
-              <div class="card-body">
-                <hgroup>
-                  <a href="single_product.html">
-                    <h5 class="card-title">drs-01</h5>
-                  </a>
-                  <p class="card-text">Rs. 16,650</p>
-                </hgroup>
-                <a href="#" class="btn">
-                  <span class="d-md-block d-none me-1">Add to cart</span>
-                  <i class="ph ph-shopping-cart-simple"></i>
-                </a>
-              </div>
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="cart_product_delete_col"></th>
+                    <th scope="col">Product</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Subtotal</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <button>
+                        <i class="ph ph-x-circle"></i>
+                      </button>
+                    </td>
+                    <td>
+                      <div class="cart_product_detail d-flex align-items-center gap-3">
+                        <figure class="cart_img">
+                          <img src="images/products/product_1.webp" alt="">
+                        </figure>
+                        <div class="">
+                          <h5>DRS-01</h5>
+                          <p><b>Color:</b> Red</p>
+                          <p><b>Size:</b> Small</p>
+                          <p><b>Material:</b> leather</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>$20.25</td>
+                    <td>
+                      <div class="counter justify-content-start">
+                        <button class="minus">-</button>
+                        <input type="text" class="count" value="4" readonly="">
+                        <button class="plus">+</button>
+                      </div>
+                    </td>
+                    <td>$81.00</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button>
+                        <i class="ph ph-x-circle"></i>
+                      </button>
+                    </td>
+                    <td>
+                      <div class="cart_product_detail d-flex align-items-center gap-3">
+                        <figure class="cart_img">
+                          <img src="images/products/product_2.webp" alt="">
+                        </figure>
+                        <div class="">
+                          <h5>RTX-10</h5>
+                          <p><b>Color:</b> Blue</p>
+                          <p><b>Size:</b> Medium</p>
+                          <p><b>Material:</b> Polyester</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>$35.50</td>
+                    <td>
+                      <div class="counter justify-content-start">
+                        <button class="minus">-</button>
+                        <input type="text" class="count" value="1" readonly="">
+                        <button class="plus">+</button>
+                      </div>
+                    </td>
+                    <td>$35.50</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="py-3">
+                      <form action="#" method="post" class="coupon_code_form">
+                        <div class="input-group">
+                          <input type="email" class="form-control" placeholder="Enter Coupon Code" required="">
+                          <div class="input-group-append">
+                            <button class="btn btn-primary" type="submit">Apply Coupon</button>
+                          </div>
+                        </div>
+                      </form>
+                    </td>
+                    <td colspan="3" class="py-3">
+                      <div class="text-end">
+                        <button class="btn">
+                          <span>update Cart</span>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-3">
-            <div class="card product_card">
-              <figure class="product_img">
-                <img src="images/products/product_2.webp" class="card-img" alt="Product Image">
-              </figure>
-              <div class="card-body">
-                <hgroup>
-                  <a href="single_product.html">
-                    <h5 class="card-title">drs-02</h5>
-                  </a>
-                  <p class="card-text">Rs. 18,950</p>
-                </hgroup>
-                <a href="#" class="btn">
-                  <span class="d-md-block d-none me-1">Add to cart</span>
-                  <i class="ph ph-shopping-cart-simple"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-3">
-            <div class="card product_card">
-              <figure class="product_img">
-                <span class="badge">Sale</span>
-                <img src="images/products/product_3.webp" class="card-img" alt="Product Image">
-              </figure>
-              <div class="card-body">
-                <hgroup>
-                  <a href="single_product.html">
-                    <h5 class="card-title">drs-03</h5>
-                  </a>
-                  <p class="card-text">Rs. 21,350</p>
-                </hgroup>
-                <a href="#" class="btn">
-                  <span class="d-md-block d-none me-1">Add to cart</span>
-                  <i class="ph ph-shopping-cart-simple"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-3">
-            <div class="card product_card">
-              <figure class="product_img">
-                <img src="images/products/product_4.webp" class="card-img" alt="Product Image">
-              </figure>
-              <div class="card-body">
-                <hgroup>
-                  <a href="single_product.html">
-                    <h5 class="card-title">drs-04</h5>
-                  </a>
-                  <p class="card-text">Rs. 24,500</p>
-                </hgroup>
-                <a href="#" class="btn">
-                  <span class="d-md-block d-none me-1">Add to cart</span>
-                  <i class="ph ph-shopping-cart-simple"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-3">
-            <div class="card product_card">
-              <figure class="product_img">
-                <img src="images/products/product_5.webp" class="card-img" alt="Product Image">
-              </figure>
-              <div class="card-body">
-                <hgroup>
-                  <a href="single_product.html">
-                    <h5 class="card-title">drs-05</h5>
-                  </a>
-                  <p class="card-text">Rs. 28,750</p>
-                </hgroup>
-                <a href="#" class="btn">
-                  <span class="d-md-block d-none me-1">Add to cart</span>
-                  <i class="ph ph-shopping-cart-simple"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-3">
-            <div class="card product_card">
-              <figure class="product_img">
-                <img src="images/products/product_6.webp" class="card-img" alt="Product Image">
-              </figure>
-              <div class="card-body">
-                <hgroup>
-                  <a href="single_product.html">
-                    <h5 class="card-title">drs-06</h5>
-                  </a>
-                  <p class="card-text">Rs. 32,450</p>
-                </hgroup>
-                <a href="#" class="btn">
-                  <span class="d-md-block d-none me-1">Add to cart</span>
-                  <i class="ph ph-shopping-cart-simple"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-3">
-            <div class="card product_card">
-              <figure class="product_img">
-                <span class="badge">Sale</span>
-                <img src="images/products/product_7.webp" class="card-img" alt="Product Image">
-              </figure>
-              <div class="card-body">
-                <hgroup>
-                  <a href="single_product.html">
-                    <h5 class="card-title">drs-07</h5>
-                  </a>
-                  <p class="card-text">Rs. 36,850</p>
-                </hgroup>
-                <a href="#" class="btn">
-                  <span class="d-md-block d-none me-1">Add to cart</span>
-                  <i class="ph ph-shopping-cart-simple"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-3">
-            <div class="card product_card">
-              <figure class="product_img">
-                <span class="badge">Sale</span>
-                <img src="images/products/product_8.webp" class="card-img" alt="Product Image">
-              </figure>
-              <div class="card-body">
-                <hgroup>
-                  <a href="single_product.html">
-                    <h5 class="card-title">drs-08</h5>
-                  </a>
-                  <p class="card-text">Rs. 39,950</p>
-                </hgroup>
-                <a href="#" class="btn">
-                  <span class="d-md-block d-none me-1">Add to cart</span>
-                  <i class="ph ph-shopping-cart-simple"></i>
+          <div class="col-12">
+            <div class="cart_detail d-flex gap-2 flex-column text-center">
+              <h3>Your Shopping Cart Details</h3>
+              <p>Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Animi recusandae, voluptas libero asperiores molestias deleniti aliquam soluta incidunt maxime ex.</p>
+              <table class="table text-start">
+                <tr>
+                  <th>Total Price</th>
+                  <td>Rs 30,000</td>
+                </tr>
+                <tr>
+                  <th>Total Discount</th>
+                  <td>-Rs 2,000</td>
+                </tr>
+                <tr>
+                  <th>Shopee Coupon</th>
+                  <td>-Rs 1,000</td>
+                </tr>
+                <tr>
+                  <th>Total</th>
+                  <td>Rs 27,000</td>
+                </tr>
+              </table>
+              <div class="d-flex align-items-center justify-content-center gap-2">
+                <button class="btn outline">
+                  <span>Contnue Shopping</span>
+                </button>
+                <a href="checkout.html" class="btn">
+                  <span>check out</span>
                 </a>
               </div>
             </div>
@@ -633,7 +456,6 @@
         </div>
       </div>
     </section>
-    <!-- New Arrivals end -->
   </main>
   <!--====  End of Main  ====-->
   <!--============================

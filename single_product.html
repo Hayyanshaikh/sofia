@@ -15,7 +15,7 @@
 
 <body>
   <!-- offcanvas -->
-  <div class="offcanvas offcanvas-end" id="cart_canvas">
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="cart_canvas" aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-header">
       <h6 class="text-uppercase">shopping bag <span class="text-capitalize">(5 items)</span> </h6>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
@@ -118,6 +118,7 @@
       </a>
     </div>
   </div>
+
   <!-- end offcanvas -->
   <!--============================
   =            Header            =
@@ -319,105 +320,140 @@
       </div>
     </div>
   </header>
-  <!--====  End of Header  ====-->
+  <!--====  End of Footer  ====-->
   <!--==========================
   =            Main            =
   ===========================-->
   <main>
-    <!-- hero -->
-    <section class="hero no_p">
-      <div class="container-fluid px-0">
-        <div class="row">
-          <div class="col-12 px-0">
-            <video autoplay muted loop class="w-100">
-              <source src="videos/hero.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- hero end -->
-    <!-- collections -->
-    <section class="collections">
+    <!--  single product detail -->
+    <section class="single_product pt-4 pb-0">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 text-center text-lg-start mb-lg-0 mb-4">
-            <hgroup>
-              <h2 class="heading">The Sofia Collection</h2>
-              <p class="text_line">Luxe, lightweight, and made with the perfect blend of cashmere and cotton.</p>
-            </hgroup>
-            <div class="collection_slider_buttons">
-              <div class="swiper-button-prev arrows"></div>
-              <div class="swiper-button-next arrows"></div>
-            </div>
-          </div>
-          <div class="col-lg-9">
-            <div class="collection_slider swiper">
+          <div class="col-lg-7 mb-lg-0 mb-4">
+            <div class="single_product_slider swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <a href="#" class="card collection_card">
-                    <figure class="collection_img">
-                      <img src="images/collections/collection_1.webp" class="card-img-top lazy" alt="Luxury Formals">
-                    </figure>
-                    <div class="card-body">
-                      <h5 class="card-title">teens</h5>
-                      <button class="btn outline">
-                        <i class="ph ph-arrow-up-right"></i>
-                      </button>
-                    </div>
-                  </a>
+                  <figure class="single_product_img">
+                    <img src="images/single_product/product_1.webp" alt="Product Image 1" class="img-fluid">
+                  </figure>
                 </div>
                 <div class="swiper-slide">
-                  <a href="#" class="card collection_card">
-                    <figure class="collection_img">
-                      <img src="images/collections/collection_2.webp" class="card-img-top lazy" alt="Luxury Pret">
-                    </figure>
-                    <div class="card-body">
-                      <h5 class="card-title">Luxury Pret</h5>
-                      <button class="btn outline">
-                        <i class="ph ph-arrow-up-right"></i>
-                      </button>
-                    </div>
-                  </a>
+                  <figure class="single_product_img">
+                    <img src="images/single_product/product_2.webp" alt="Product Image 2" class="img-fluid">
+                  </figure>
                 </div>
                 <div class="swiper-slide">
-                  <a href="#" class="card collection_card">
-                    <figure class="collection_img">
-                      <img src="images/collections/collection_3.webp" class="card-img-top" alt="Kids">
-                    </figure>
-                    <div class="card-body">
-                      <h5 lazy class="card-title">bottoms</h5>
-                      <button class="btn outline">
-                        <i class="ph ph-arrow-up-right"></i>
-                      </button>
-                    </div>
-                  </a>
+                  <figure class="single_product_img">
+                    <img src="images/single_product/product_3.webp" alt="Product Image 3" class="img-fluid">
+                  </figure>
                 </div>
                 <div class="swiper-slide">
-                  <a href="#" class="card collection_card">
-                    <figure class="collection_img">
-                      <img src="images/collections/collection_4.webp" class="card-img-top lazy" alt="Menswear">
-                    </figure>
-                    <div class="card-body">
-                      <h5 class="card-title">ready to wear</h5>
-                      <button class="btn outline">
-                        <i class="ph ph-arrow-up-right"></i>
-                      </button>
-                    </div>
-                  </a>
+                  <figure class="single_product_img">
+                    <img src="images/single_product/product_4.webp" alt="Product Image 4" class="img-fluid">
+                  </figure>
                 </div>
                 <div class="swiper-slide">
-                  <a href="#" class="card collection_card">
-                    <figure class="collection_img">
-                      <img src="images/collections/collection_5.webp" class="card-img-top lazy" alt="Mommy & Me">
-                    </figure>
-                    <div class="card-body">
-                      <h5 class="card-title">Kids</h5>
-                      <button class="btn outline">
-                        <i class="ph ph-arrow-up-right"></i>
-                      </button>
+                  <figure class="single_product_img">
+                    <img src="images/single_product/product_5.webp" alt="Product Image 5" class="img-fluid">
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <figure class="single_product_img">
+                    <img src="images/single_product/product_6.webp" alt="Product Image 6" class="img-fluid">
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <figure class="single_product_img">
+                    <img src="images/single_product/product_7.webp" alt="Product Image 7" class="img-fluid">
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <figure class="single_product_img">
+                    <img src="images/single_product/product_8.webp" alt="Product Image 8" class="img-fluid">
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <hgroup class="mb-2">
+              <h2 class="text-uppercase">drs-01</h2>
+              <h5 class="fw-medium">Rs. 16,650</h5>
+            </hgroup>
+            <p class="text-muted mb-2">Product Code: ABC123</p>
+            <div class="sold_product d-flex my-3 align-items-center gap-1">
+              <i class="ph ph-fire"></i>
+              <p> 21 sold in last 15 hours</p>
+            </div>
+            <div class="single_product_actions mb-3">
+              <div class="counter">
+                <button class="minus">-</button>
+                <input type="text" class="count" value="1" readonly>
+                <button class="plus">+</button>
+              </div>
+              <div class="d-flex gap-1">
+                <button class="btn btn-primary mr-2">
+                  <span>Add to Cart</span>
+                </button>
+                <button class="btn outline">
+                  <span>Buy Now</span>
+                </button>
+              </div>
+              <button>
+                <i class="ph ph-heart"></i>
+              </button>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                I agree with the <a href="#" class="text-decoration-underline">terms and conditions</a>.
+              </label>
+            </div>
+            <div class="d-flex gap-4 mb-3">
+              <div class="d-flex flex-column">
+                <label for="colorSelect" class="form-label">Color:</label>
+                <select id="colorSelect" class="form-select">
+                  <option>Select Color</option>
+                  <option value="Red">Red</option>
+                  <option value="Blue">Blue</option>
+                  <option value="Green">Green</option>
+                </select>
+              </div>
+              <div class="d-flex flex-column">
+                <label for="sizeSelect" class="form-label">Size:</label>
+                <select id="sizeSelect" class="form-select">
+                  <option>Select Size</option>
+                  <option value="Small">Small</option>
+                  <option value="Medium">Medium</option>
+                  <option value="Large">Large</option>
+                </select>
+              </div>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Description
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="product_desc">
+                      <p class="text-muted">Enter a realm of artistry and tradition with this rust peshwas from Asim Jofa’s “Jaan-e-Jahan Chiffon collection.” Every stitch tells a tale of timeless elegance and cultural richness. Motifs inspired by cultural elements dance across the fabric speaking volumes of traditional beauty. The antique gold zariwork along with 3mm gold cupped sequins symbolizes legacy adding depth and significance to the ensemble. The rich rustic hue anchors the outfit with a sense of passion. Luminous embroidery enhances this masterpiece with grace and allure.</p>
+                      <h5>DESIGN DETAILS:</h5>
+                      <ul class="product-details text-muted">
+                        <li>Embroidered front body on chiffon</li>
+                        <li>Embroidered back body on chiffon</li>
+                        <li>1 meter embroidered border for bodice hem on chiffon</li>
+                        <li>22 embroidered kalis on chiffon</li>
+                        <li>5 meter embroidered border for ghera on chiffon</li>
+                        <li>Pair of embroidered sleeves on chiffon</li>
+                        <li>Pair of embroidered bunches for sleeves on chiffon</li>
+                        <li>2.5 meter embroidered dupatta on chiffon with 4 side borders</li>
+                        <li>1.5 meter dyed twisted silk for trouser</li>
+                      </ul>
                     </div>
-                  </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -425,52 +461,12 @@
         </div>
       </div>
     </section>
-    <!-- collections end -->
-    <!-- banners -->
-    <section class="banners no_p">
-      <div class="row">
-        <div class="col-12">
-          <a href="single_product.html" class="banner_card">
-            <figure class="banner_img">
-              <img src="images/banners/banner_1.jpeg" alt="">
-            </figure>
-            <div class="banner_card_content">
-              <h3 class="banner_title">silk luxe</h3>
-              <button class="btn"><span>shop now</span></button>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a href="single_product.html" class="banner_card">
-            <figure class="banner_img">
-              <img src="images/banners/banner_2.jpeg" alt="">
-            </figure>
-            <div class="banner_card_content">
-              <h3 class="banner_title">the social</h3>
-              <button class="btn"><span>shop now</span></button>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a href="single_product.html" class="banner_card">
-            <figure class="banner_img">
-              <img src="images/banners/banner_3.jpeg" alt="">
-            </figure>
-            <div class="banner_card_content">
-              <h3 class="banner_title">formals</h3>
-              <button class="btn"><span>shop now</span></button>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- banners end -->
-    <!-- New Arrivals -->
+    <!--  recent views -->
     <section class="new_arrivals">
       <div class="container">
         <div class="row mb-4">
           <div class="col-12">
-            <h3 class="heading text-center">New Arrivals</h3>
+            <h3 class="heading text-center">Recent Views</h3>
           </div>
         </div>
         <div class="row products_row">
@@ -633,7 +629,6 @@
         </div>
       </div>
     </section>
-    <!-- New Arrivals end -->
   </main>
   <!--====  End of Main  ====-->
   <!--============================
