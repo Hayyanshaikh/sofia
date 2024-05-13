@@ -35,9 +35,10 @@
 /*=====  End of Container CSS  ======*/
 
 @media (max-width: 992px) {
-  div[class^="col-"]:has(.single_product_slider){
+  div[class^="col-"]:has(.single_product_slider) {
     position: unset;
   }
+
   header .dropdown-menu {
     opacity: 1;
     width: 100%;
@@ -51,6 +52,28 @@
 }
 
 @media (max-width: 768px) {
+  .account_wrapper {
+    flex-direction: column;
+  }
+
+  .account_sidebar {
+    width: 100%;
+    position: unset;
+    flex: 0 0 auto;
+  }
+
+  .account_list {
+    overflow: auto;
+    flex-direction: row;
+  }
+
+  .account_list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .account_list li {
+    flex: 0 0 auto;
+  }
 
   .banner_img {
     height: 400px;
