@@ -293,7 +293,7 @@ i[class^="ph"] {
 .heading {
   font-weight: 600;
   line-height: 1.2;
-  font-size: clamp(35px, 4vw, 38px);
+  font-size: clamp(25px, 4vw, 38px);
 }
 
 .text_line {
@@ -351,6 +351,7 @@ i[class^="ph"] {
 
 .card {
   border: none;
+  background-color: transparent;
 }
 
 .card-img,
@@ -519,9 +520,9 @@ select {
 }
 
 .accordion-button::after {
-  content: "\ea5f";
+  content: "\E136";
   color: var(--gray-300);
-  font-family: 'tabler-icons';
+  font-family: var(--font-icon);
   background: unset !important;
   height: unset;
   font-size: clamp(16px, 2vw, 18px);
@@ -823,6 +824,12 @@ header .dropdown-item i {
   border-radius: 3px;
 }
 
+.product_img a {
+  height: 100%;
+  display: block;
+  width: 100%;
+}
+
 .product_card .card-title {
   font-size: clamp(16px, 2vw, 18px);
   text-transform: uppercase;
@@ -976,6 +983,49 @@ div[class^="col-"]:has(.single_product_slider) {
 .sold_product i {
   color: var(--bs-orange);
 
+}
+
+.review_card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 15px;
+  border-radius: 3px;
+  border: 1px solid var(--gray-150);
+  background: var(--gray-100);
+  height: 100%;
+}
+
+.review_card .card-body {
+  padding-block: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-img {
+  margin-top: 5px;
+  border-radius: 3px;
+  height: 50px;
+  width: 50px;
+  flex: 0 0 auto;
+}
+
+
+.review_card i[class^="ph-"] {
+  color: var(--bs-orange);
+  font-size: clamp(16px, 2vw, 18px);
+}
+
+.customer_name {
+  text-decoration: underline;
+  font-weight: 500;
+  color: var(--black);
+}
+
+a:has(.customer_name) {
+  margin-top: auto;
+  padding-top: 8px;
 }
 
 /* single products end */
@@ -1299,11 +1349,11 @@ div[class^="col-"]:has(.single_product_slider) {
 /* my account */
 
 /* my account */
-.account{
+.account {
   padding: 40px 0px !important;
 }
 
-.account .heading_title{
+.account .heading_title {
   margin-bottom: 30px;
 }
 
@@ -1433,6 +1483,6 @@ div[class^="col-"]:has(.single_product_slider) {
   background: var(--gray-50);
 }
 
-.address_card .card-title{
+.address_card .card-title {
   margin-bottom: 10px;
 }
