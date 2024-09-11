@@ -1,3 +1,4 @@
+
 $(function() {
   menuDropdown();
   $(window).resize(function() {
@@ -24,27 +25,56 @@ $(function() {
     }
   });
 
+  var singleProductThumbSlider = new Swiper(".single_product_thumb_slider", {
+    freeMode: true,
+    spaceBetween: 10,
+    mousewheel: true,
+    slidesPerView: "auto",
+    reverseDirection: true,
+    direction: "horizontal",
+    watchSlidesProgress: true,
+    breakpoints: {
+      768: {
+        direction: "vertical",
+      }
+    }
+  });
+
   var singleProductSlider = new Swiper('.single_product_slider', {
-    loop: true,
     speed: 500,
     spaceBetween: 20,
     slidesPerView: 1,
+    zoom: {
+      maxRatio: 2,
+    },
+    thumbs: {
+      swiper: singleProductThumbSlider,
+    },
+  });
+
+  var fabricSlider = new Swiper('.fabric_clothes_slider', {
+    slidesPerView: 2,
+    spaceBetween: 10,
     autoplay: {
       delay: 3000,
     },
+    speed: 500,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
     breakpoints: {
-      424: {
+      500: {
         slidesPerView: 2,
       },
       768: {
         slidesPerView: 3,
       },
-      992: {
-        slidesPerView: 2,
+      1024: {
+        slidesPerView: 4,
       },
     }
   });
-  
   $('.minus').click(function() {
     var value = parseInt($(this).parent(".counter").find(".count").val());
     if (value > 1) {

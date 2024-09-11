@@ -118,23 +118,31 @@
       </a>
     </div>
   </div>
-
   <!-- end offcanvas -->
   <!--============================
   =            Header            =
   =============================-->
   <header>
-    <div class="header_top xs-width py-2 text-white">
+    <div class="header_top d-sm-block d-none xs-width py-2 text-white">
       <div class="container">
         <div class="row">
           <div class="col-sm-4">
-            <p class="text-start small">Free Shipping Above $300</p>
+            <div class="d-flex align-items-center justify-content-start gap-2">
+              <i class="ph ph-truck"></i>
+              <p class="small">Free Shipping Above $300</p>
+            </div>
           </div>
           <div class="col-sm-4 d-none d-sm-block">
-            <p class="text-center small">info.sofia@sofia.ae</p>
+            <div class="d-flex align-items-center justify-content-center gap-2">
+              <i class="ph ph-envelope-simple"></i>
+              <p class="small">info.sofia@sofia.ae</p>
+            </div>
           </div>
           <div class="col-sm-4">
-            <p class="text-end small">+1 (424) 433-3993</p>
+            <div class="d-flex align-items-center justify-content-end gap-2">
+              <i class="ph ph-phone"></i>
+              <p class="small">+1 (424) 433-3993</p>
+            </div>
           </div>
         </div>
       </div>
@@ -142,7 +150,12 @@
     <div class="header_middle xs-width py-3">
       <div class="container">
         <div class="row">
-          <div class="col-sm-4 d-sm-block d-none">
+          <div class="col-md-3 col-6">
+            <a href="index.html" class="logo">
+              <img src="images/brand/logo.svg"/ alt="Brand Logo">
+            </a>
+          </div>
+          <div class="col-sm-6 d-md-block d-none">
             <div class="header_search_wrapper">
               <a href="#" class="header_icon d-md-none d-flex">
                 <i class="ph ph-magnifying-glass"></i>
@@ -157,21 +170,17 @@
               </form>
             </div>
           </div>
-          <div class="col-sm-4">
-            <a href="index.html" class="logo">
-              <img src="images/brand/logo.svg"/ alt="Brand Logo">
-            </a>
-          </div>
-          <div class="col-sm-4">
+          <div class="col-md-3 col-6">
             <div class="header_ecom_icons">
-              <a href="cart.html" class="header_icon d-flex d-sm-none">
-                <i class="ph ph-magnifying-glass"></i>
-              </a>
               <a href="cart.html" class="header_icon icon_badge" data-bs-toggle="offcanvas" data-bs-target="#cart_canvas" data-value="5">
                 <i class="ph ph-shopping-bag"></i>
+                <span class="d-md-block d-none">Cart</span>
               </a>
-              <a href="cart.html" class="header_icon icon_badge" data-value="2">
-                <i class="ph ph-heart"></i>
+              <a href="cart.html" class="header_icon d-flex d-md-none">
+                <i class="ph ph-magnifying-glass"></i>
+              </a>
+              <a href="track_order.html" class="header_icon d-flex">
+                <i class="ph ph-truck"></i>
               </a>
               <a href="login.html" class="header_icon">
                 <i class="ph ph-user-circle"></i>
@@ -181,10 +190,10 @@
         </div>
       </div>
     </div>
-    <div class="header_bottom xs-width bg-light">
+    <div class="header_bottom xs-width">
       <div class="container">
         <div class="row">
-          <div class="col-lg-10 col-sm-2">
+          <div class="col-lg-12 col-sm-2">
             <button data-bs-toggle="offcanvas" data-bs-target="#menu" class="sale_btn d-lg-none px-3 d-flex">
               <i class="ph ph-list"></i>
             </button>
@@ -193,10 +202,10 @@
                 <h5 class="">Menu</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
               </div>
-              <div class="offcanvas-body overflow bg-light">
-                <ul class="header_categories d-lg-inline-flex align-items-center gap-4">
+              <div class="offcanvas-body overflow">
+                <ul class="header_categories d-lg-flex justify-content-between align-items-center gap-4">
                   <li>
-                    <a class="text-capitalize" href="collections.html">eid collection</a>
+                    <a class="text-capitalize" href="javascript:void(0)">eid collection</a>
                     <div class="dropdown-menu">
                       <a href="single_collection.html" class="dropdown-item">
                         <i class="ph ph-caret-right"></i>
@@ -217,7 +226,7 @@
                     </div>
                   </li>
                   <li>
-                    <a class="text-capitalize" href="collections.html">Unstitched</a>
+                    <a class="text-capitalize" href="javascript:void(0)">Unstitched</a>
                     <div class="dropdown-menu">
                       <a href="single_collection.html" class="dropdown-item">
                         <i class="ph ph-caret-right"></i>
@@ -238,7 +247,7 @@
                     </div>
                   </li>
                   <li>
-                    <a class="text-capitalize" href="collections.html">Stitched</a>
+                    <a class="text-capitalize" href="javascript:void(0)">Stitched</a>
                     <div class="dropdown-menu">
                       <a href="single_collection.html" class="dropdown-item">
                         <i class="ph ph-caret-right"></i>
@@ -259,7 +268,7 @@
                     </div>
                   </li>
                   <li>
-                    <a class="text-capitalize" href="collections.html">Couture Wedding Wear</a>
+                    <a class="text-capitalize" href="javascript:void(0)">Couture Wedding Wear</a>
                     <div class="dropdown-menu">
                       <a href="single_collection.html" class="dropdown-item">
                         <i class="ph ph-caret-right"></i>
@@ -276,7 +285,7 @@
                     </div>
                   </li>
                   <li>
-                    <a class="text-capitalize" href="collections.html">Jewelry</a>
+                    <a class="text-capitalize" href="javascript:void(0)">Jewelry</a>
                     <div class="dropdown-menu">
                       <a href="single_collection.html" class="dropdown-item">
                         <i class="ph ph-caret-right"></i>
@@ -293,7 +302,7 @@
                     </div>
                   </li>
                   <li>
-                    <a class="text-capitalize" href="collections.html">Accessories</a>
+                    <a class="text-capitalize" href="javascript:void(0)">Accessories</a>
                     <div class="dropdown-menu">
                       <a href="single_collection.html" class="dropdown-item">
                         <i class="ph ph-caret-right"></i>
@@ -309,12 +318,48 @@
                       </a>
                     </div>
                   </li>
+                  <li>
+                    <a class="text-capitalize" href="javascript:void(0)">Casual Wear</a>
+                    <div class="dropdown-menu">
+                      <a href="single_collection.html" class="dropdown-item">
+                        <i class="ph ph-caret-right"></i>
+                        <span>Everyday Comfort</span>
+                      </a>
+                      <a href="single_collection.html" class="dropdown-item">
+                        <i class="ph ph-caret-right"></i>
+                        <span>Weekend Vibes</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="text-capitalize" href="javascript:void(0)">Formal Wear</a>
+                    <div class="dropdown-menu">
+                      <a href="single_collection.html" class="dropdown-item">
+                        <i class="ph ph-caret-right"></i>
+                        <span>Office Attire</span>
+                      </a>
+                      <a href="single_collection.html" class="dropdown-item">
+                        <i class="ph ph-caret-right"></i>
+                        <span>Business Meetings</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="text-capitalize" href="javascript:void(0)">Summer Essentials</a>
+                    <div class="dropdown-menu">
+                      <a href="single_collection.html" class="dropdown-item">
+                        <i class="ph ph-caret-right"></i>
+                        <span>Light Dresses</span>
+                      </a>
+                      <a href="single_collection.html" class="dropdown-item">
+                        <i class="ph ph-caret-right"></i>
+                        <span>Breezy Tops</span>
+                      </a>
+                    </div>
+                  </li>
                 </ul>
               </div>
             </div>
-          </div>
-          <div class="col-lg-2 col-sm-3 offset-lg-0 offset-sm-7 d-flex align-items-center justify-content-end">
-            <a class="text-capitalize sale_btn" href="category.html">Best Sale</a>
           </div>
         </div>
       </div>
@@ -370,10 +415,10 @@
         <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
           <h5 class="mb-3">Quick Links</h5>
           <ul class="list-unstyled">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="single_collection.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
@@ -419,8 +464,8 @@
         </div>
         <div class="col-md-2 text-md-right">
           <ul class="list-inline">
-            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-            <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+            <li class="list-inline-item"><a href="privacy_policy.html">Privacy Policy</a></li>
+            <li class="list-inline-item"><a href="term_conditions.html">Terms of Use</a></li>
           </ul>
         </div>
       </div>

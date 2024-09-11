@@ -25,7 +25,7 @@
         <li>
           <div class="card cart_product mb-3">
             <figure>
-              <img src="images/products/product_1.webp" class="" alt="...">
+              <a href="single_product.html"><img src="images/products/product_1.webp" class="" alt="..."></a>
             </figure>
             <div class="card-body">
               <h5 class="card-title">drs-01</h5>
@@ -41,7 +41,7 @@
         <li>
           <div class="card cart_product mb-3">
             <figure>
-              <img src="images/products/product_2.webp" class="" alt="...">
+              <a href="single_product.html"><img src="images/products/product_2.webp" class="" alt="..."></a>
             </figure>
             <div class="card-body">
               <h5 class="card-title">drs-02</h5>
@@ -57,7 +57,7 @@
         <li>
           <div class="card cart_product mb-3">
             <figure>
-              <img src="images/products/product_3.webp" class="" alt="...">
+              <a href="single_product.html"><img src="images/products/product_3.webp" class="" alt="..."></a>
             </figure>
             <div class="card-body">
               <h5 class="card-title">drs-03</h5>
@@ -73,7 +73,7 @@
         <li>
           <div class="card cart_product mb-3">
             <figure>
-              <img src="images/products/product_4.webp" class="" alt="...">
+              <a href="single_product.html"><img src="images/products/product_4.webp" class="" alt="..."></a>
             </figure>
             <div class="card-body">
               <h5 class="card-title">drs-04</h5>
@@ -89,7 +89,7 @@
         <li>
           <div class="card cart_product mb-3">
             <figure>
-              <img src="images/products/product_5.webp" class="" alt="...">
+              <a href="single_product.html"><img src="images/products/product_5.webp" class="" alt="..."></a>
             </figure>
             <div class="card-body">
               <h5 class="card-title">drs-05</h5>
@@ -370,123 +370,110 @@
   =            Main            =
   ===========================-->
   <main>
-    <section class="account">
+    <!--  contact info -->
+    <section class="contact_info bg">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="heading">
-              <h2 class="heading_title">My account</h2>
-            </div>
-            <div class="account_wrapper">
-              <div class="account_sidebar">
-                <ul class="account_list">
-                  <li>
-                    <a class="active" href="my_account.html">
-                      <i class="ph ph-user-circle"></i>
-                      <span>My account</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="address_book.html">
-                      <i class="ph ph-map-pin"></i>
-                      <span>My address book</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="orders.html">
-                      <i class="ph ph-shopping-bag"></i>
-                      <span>My orders</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="account_main">
-                <h4>My account</h4>
-                <form class="account_form">
-                  <div class="form-row">
-                    <h5>Personal Information</h5>
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <p>When signing up on an e-commerce site, share your name, email, and phone. Keep your info secure. Enter details accurately for smooth account management.</p>
-                      </div>
-                      <div class="col-lg-4">
-                        <div class="mb-3">
-                          <label for="firstName" class="form-label">First Name (FS)</label>
-                          <input type="text" class="form-control" id="firstName" placeholder="eg. Mateusz">
-                        </div>
-                        <div class="mb-3">
-                          <label for="birthdate" class="form-label">Birthdate (BD)</label>
-                          <input type="date" class="form-control" id="birthdate">
-                        </div>
-                      </div>
-                      <div class="col-lg-4">
-                        <div class="mb-3">
-                          <label for="lastName" class="form-label">Last Name (LS)</label>
-                          <input type="text" class="form-control" id="lastName" placeholder="eg. Kowalski">
-                        </div>
-                        <div class="mb-3">
-                          <label for="phoneNumber" class="form-label">Phone Number (PN)</label>
-                          <input type="tel" class="form-control" id="phoneNumber" placeholder="eg. +1234567890">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-row">
-                    <h5>Email Address</h5>
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <p>Providing your email address is crucial for account creation on e-commerce platforms, facilitating verification and updates.</p>
-                      </div>
-                      <div class="col-lg-4">
-                        <div class="mb-3">
-                          <label for="email" class="form-label">Email Address</label>
-                          <input type="email" class="form-control" id="email" placeholder="eg. example@example.com">
-                        </div>
-                      </div>
-                      <div class="col-lg-4">
-                        <div class="mb-3">
-                          <label for="password" class="form-label">Password</label>
-                          <input type="password" class="form-control" id="password" placeholder="Enter your password">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-row">
-                    <h5>Password</h5>
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <p>Choose a strong, memorable password for security and update it regularly to protect your account.</p>
-                      </div>
-                      <div class="col-lg-4">
-                        <div class="mb-3">
-                          <label for="current-password" class="form-label">Current Password</label>
-                          <input type="password" class="form-control" id="current-password" placeholder="Enter your current password">
-                        </div>
-                      </div>
-                      <div class="col-lg-4">
-                        <div class="mb-3">
-                          <label for="new-password" class="form-label">New Password</label>
-                          <input type="password" class="form-control" id="new-password" placeholder="Enter your new password">
-                        </div>
-                      </div>
-                      <div class="col-lg-8 offset-lg-4">
-                        <div class="mb-3">
-                          <label for="confirm-password" class="form-label">Confirm Password</label>
-                          <input type="password" class="form-control" id="confirm-password" placeholder="Confirm your new password">
-                        </div>
-                      </div>
-                      <div class="col-lg-12">
-                        <div class="d-flex align-items-center justify-content-end gap-2">
-                          <button class="btn">
-                            <span>Save</span>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </form>
+        <div class="row mb-5">
+          <div class="col-12">
+            <h2 class="heading text-center">Contact Info</h2>
+          </div>
+        </div>
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <div class="card text-center">
+              <div class="card-body p-0">
+                <div class="mb-2">
+                  <i class="ph ph-envelope-simple-open fs-1"></i>
+                </div>
+                <h5 class="card-title mb-2">Emails</h5>
+                <p class="card-text">info@example.com</p>
+                <p class="card-text">support@example.com</p>
               </div>
             </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card text-center">
+              <div class="card-body p-0">
+                <div class="mb-2">
+                  <i class="ph ph-map-pin fs-1"></i>
+                </div>
+                <h5 class="card-title mb-2">Addresses</h5>
+                <p class="card-text">28 Jackson Blvd Ste 1020 Chicago IL 60604-2340</p>
+                <p class="card-text">1234 Elm St, Springfield, IL 62704</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card text-center">
+              <div class="card-body p-0">
+                <div class="mb-2">
+                  <i class="ph ph-phone fs-1"></i>
+                </div>
+                <h5 class="card-title mb-2">Phones</h5>
+                <p class="card-text">+1 (312) 555-1234</p>
+                <p class="card-text">+1 (217) 555-5678</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  contact us -->
+    <section class="contact">
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-lg-6">
+            <hgroup class="mb-sm-5 mb-4">
+              <h2 class="heading mb-3">Location</h2>
+              <p class="text_line">1234 Elm St, Springfield, IL 62704</p>
+            </hgroup>
+            <hgroup class="mb-sm-5 mb-4">
+              <h2 class="heading mb-3">Follow Us</h2>
+              <div class="contact_social d-flex gap-2 align-items-center">
+                <a href="#"><i class="ph ph-facebook-logo"></i></a>
+                <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                <a href="#"><i class="ph ph-x-logo"></i></a>
+                <a href="#"><i class="ph ph-pinterest-logo"></i></a>
+              </div>
+            </hgroup>
+            <p class="text_line">© 2024 SOFIA Women's Clothing Store. All rights reserved.</p>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="heading mb-4">Contact Us</h2>
+            <form class="contact_form">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" required id="name" placeholder="Enter your name">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" required id="email" placeholder="Enter your email">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="mb-3">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" required id="subject" placeholder="Enter subject">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" required id="message" rows="4" placeholder="Enter your message"></textarea>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <button type="submit" class="btn">
+                    <span>Send Message</span>
+                    <i class="ph ph-paper-plane-right"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>

@@ -25,7 +25,7 @@
         <li>
           <div class="card cart_product mb-3">
             <figure>
-              <img src="images/products/product_1.webp" class="" alt="...">
+              <a href="single_product.html"><img src="images/products/product_1.webp" class="" alt="..."></a>
             </figure>
             <div class="card-body">
               <h5 class="card-title">drs-01</h5>
@@ -41,7 +41,7 @@
         <li>
           <div class="card cart_product mb-3">
             <figure>
-              <img src="images/products/product_2.webp" class="" alt="...">
+              <a href="single_product.html"><img src="images/products/product_2.webp" class="" alt="..."></a>
             </figure>
             <div class="card-body">
               <h5 class="card-title">drs-02</h5>
@@ -57,7 +57,7 @@
         <li>
           <div class="card cart_product mb-3">
             <figure>
-              <img src="images/products/product_3.webp" class="" alt="...">
+              <a href="single_product.html"><img src="images/products/product_3.webp" class="" alt="..."></a>
             </figure>
             <div class="card-body">
               <h5 class="card-title">drs-03</h5>
@@ -73,7 +73,7 @@
         <li>
           <div class="card cart_product mb-3">
             <figure>
-              <img src="images/products/product_4.webp" class="" alt="...">
+              <a href="single_product.html"><img src="images/products/product_4.webp" class="" alt="..."></a>
             </figure>
             <div class="card-body">
               <h5 class="card-title">drs-04</h5>
@@ -89,7 +89,7 @@
         <li>
           <div class="card cart_product mb-3">
             <figure>
-              <img src="images/products/product_5.webp" class="" alt="...">
+              <a href="single_product.html"><img src="images/products/product_5.webp" class="" alt="..."></a>
             </figure>
             <div class="card-body">
               <h5 class="card-title">drs-05</h5>
@@ -370,123 +370,33 @@
   =            Main            =
   ===========================-->
   <main>
-    <section class="account">
+    <section class="about_us site_about">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <div class="heading">
-              <h2 class="heading_title">My account</h2>
-            </div>
-            <div class="account_wrapper">
-              <div class="account_sidebar">
-                <ul class="account_list">
-                  <li>
-                    <a class="active" href="my_account.html">
-                      <i class="ph ph-user-circle"></i>
-                      <span>My account</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="address_book.html">
-                      <i class="ph ph-map-pin"></i>
-                      <span>My address book</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="orders.html">
-                      <i class="ph ph-shopping-bag"></i>
-                      <span>My orders</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="account_main">
-                <h4>My account</h4>
-                <form class="account_form">
-                  <div class="form-row">
-                    <h5>Personal Information</h5>
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <p>When signing up on an e-commerce site, share your name, email, and phone. Keep your info secure. Enter details accurately for smooth account management.</p>
-                      </div>
-                      <div class="col-lg-4">
-                        <div class="mb-3">
-                          <label for="firstName" class="form-label">First Name (FS)</label>
-                          <input type="text" class="form-control" id="firstName" placeholder="eg. Mateusz">
-                        </div>
-                        <div class="mb-3">
-                          <label for="birthdate" class="form-label">Birthdate (BD)</label>
-                          <input type="date" class="form-control" id="birthdate">
-                        </div>
-                      </div>
-                      <div class="col-lg-4">
-                        <div class="mb-3">
-                          <label for="lastName" class="form-label">Last Name (LS)</label>
-                          <input type="text" class="form-control" id="lastName" placeholder="eg. Kowalski">
-                        </div>
-                        <div class="mb-3">
-                          <label for="phoneNumber" class="form-label">Phone Number (PN)</label>
-                          <input type="tel" class="form-control" id="phoneNumber" placeholder="eg. +1234567890">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-row">
-                    <h5>Email Address</h5>
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <p>Providing your email address is crucial for account creation on e-commerce platforms, facilitating verification and updates.</p>
-                      </div>
-                      <div class="col-lg-4">
-                        <div class="mb-3">
-                          <label for="email" class="form-label">Email Address</label>
-                          <input type="email" class="form-control" id="email" placeholder="eg. example@example.com">
-                        </div>
-                      </div>
-                      <div class="col-lg-4">
-                        <div class="mb-3">
-                          <label for="password" class="form-label">Password</label>
-                          <input type="password" class="form-control" id="password" placeholder="Enter your password">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-row">
-                    <h5>Password</h5>
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <p>Choose a strong, memorable password for security and update it regularly to protect your account.</p>
-                      </div>
-                      <div class="col-lg-4">
-                        <div class="mb-3">
-                          <label for="current-password" class="form-label">Current Password</label>
-                          <input type="password" class="form-control" id="current-password" placeholder="Enter your current password">
-                        </div>
-                      </div>
-                      <div class="col-lg-4">
-                        <div class="mb-3">
-                          <label for="new-password" class="form-label">New Password</label>
-                          <input type="password" class="form-control" id="new-password" placeholder="Enter your new password">
-                        </div>
-                      </div>
-                      <div class="col-lg-8 offset-lg-4">
-                        <div class="mb-3">
-                          <label for="confirm-password" class="form-label">Confirm Password</label>
-                          <input type="password" class="form-control" id="confirm-password" placeholder="Confirm your new password">
-                        </div>
-                      </div>
-                      <div class="col-lg-12">
-                        <div class="d-flex align-items-center justify-content-end gap-2">
-                          <button class="btn">
-                            <span>Save</span>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
+          <div class="col-12">
+            <h2 class="heading mb-5">About Us</h2>
+            <p class="text_line">
+              Welcome to Sofia! We are dedicated to providing exceptional products and services that enhance your experience. Our mission is to deliver high-quality [products/services] while ensuring customer satisfaction and fostering a community of trust and integrity.
+            </p>
+            <h5>Our Story</h5>
+            <p class="text_line">
+              Founded in [Year], Sofia started with a vision to [briefly describe the vision or inspiration behind the company]. Over the years, we have grown into a leading [industry/sector] provider, known for our commitment to excellence and innovation.
+            </p>
+            <h5>Our Values</h5>
+            <ul>
+              <li><strong>Customer-Centric:</strong> We prioritize our customers' needs and strive to exceed their expectations.</li>
+              <li><strong>Integrity:</strong> We conduct our business with honesty and transparency.</li>
+              <li><strong>Innovation:</strong> We embrace new ideas and technologies to stay ahead in our industry.</li>
+              <li><strong>Quality:</strong> We are committed to delivering products and services of the highest quality.</li>
+            </ul>
+            <h5>Our Team</h5>
+            <p class="text_line">
+              Our team is comprised of dedicated professionals who are passionate about [industry/sector]. Each member brings unique skills and expertise to ensure that we meet and exceed our customers' expectations.
+            </p>
+            <h5>Contact Us</h5>
+            <p class="text_line">
+              We value your feedback and are here to assist you. If you have any questions or need support, please feel free to reach out to us at [Insert Contact Information].
+            </p>
           </div>
         </div>
       </div>
